@@ -8,7 +8,7 @@
 @import "reset.scss";
 
 .content {
-    width: 1320px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -139,11 +139,13 @@ h3{
     &__menu {
         padding: 0 -15px;
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         font-family: 'Inter';
         font-size: 16px;
         line-height: 19px;
         &>a{
-            padding: 0 30px;
+            padding: 10px 30px;
             color: #050038;
         }
     }
@@ -209,13 +211,14 @@ h3{
     
     &__image {
         display: block;
+        width: 100%;
         margin: 0 auto;
         margin-bottom: 150px;
     }
     
     &__morethan {
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -228,10 +231,11 @@ h3{
     &__companies {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         padding: 0 -26px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         &>img{
-            padding: 0 26px;
+            padding: 20px 26px;
         }
     }
 }
@@ -259,10 +263,24 @@ h3{
     }
 
     &__flex-container {
+        max-width: 1460px;
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+    }
+    &__flex-line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__flex-line_2{
+        flex-wrap: wrap-reverse;
     }
 
+    &__padding{
+        width: 240px;
+    }
     &__item {
         max-width: 510px;
 
@@ -284,6 +302,9 @@ h3{
         &_2 {}
 
         &_3 {}
+    }
+    &__imagebox{
+        max-width: 658px;
     }
 }
 
